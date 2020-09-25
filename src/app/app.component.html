@@ -1,0 +1,38 @@
+<div id="wrap" class="full">
+
+
+   <mat-toolbar class="toolb mat-elevation-z5 nav">
+     <span ><img src="../assets/images/logo.jpeg" class="logo1"></span>
+    <span>Best Influencer Marketing Agency in India </span>
+   
+   </mat-toolbar>
+  <mat-sidenav-container>
+  
+       
+   <mat-sidenav #sidenav mode="side" opened class="example-sidenav" >
+      <mat-nav-list >
+         <img src="../assets/images/dummy.jpg" width="130px" height="130px" class="circle" />
+         <button mat-icon-button  matTooltip="Edit Profile Picture" aria-label="Example icon button with a menu icon" (click)="openDialog()">
+               <mat-icon>edit</mat-icon>
+             </button>
+     <a  mat-list-item routerLink='dash' style="height: 60px;" ><mat-icon>dashboard</mat-icon><b>Dashboard</b></a>
+     <a mat-list-item routerLink='pro' style="height: 60px;"><mat-icon>account_box</mat-icon><b>My Profile</b></a>
+     <a mat-list-item style="height: 60px;"><mat-icon>campaign</mat-icon><b>My Campaings</b></a>
+    <a mat-list-item style="height: 60px;"><mat-icon>question_answer</mat-icon><b>FAQ s</b></a>
+    <a mat-list-item style="height: 60px;"><mat-icon>contact_support</mat-icon><b>Contact Us</b></a>
+    <a mat-list-item style="height: 60px;"><mat-icon>exit_to_app</mat-icon><b>Log out</b></a>
+       </mat-nav-list>
+
+
+     </mat-sidenav>
+     <mat-sidenav-content>
+   
+     <router-outlet></router-outlet>
+        <p style="height:88vh">
+      </p>
+     
+     </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+ </div>

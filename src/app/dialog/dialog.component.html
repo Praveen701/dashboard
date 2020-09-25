@@ -1,0 +1,42 @@
+
+         
+         <h1>Change Password</h1>
+         
+        
+        <form>
+                <mat-form-field class="mat-form-field-infix" >
+                  <mat-label>Old password</mat-label>
+                  <input matInput [type]="hide0 ? 'password' : 'text'" [formControl]="oldp" required  >
+                  <button mat-icon-button matSuffix (click)="hide0 = !hide0" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide0">
+                  <mat-icon>{{hide0 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                  <mat-error *ngIf="newp.invalid">{{getpassError0()}}</mat-error>
+                </mat-form-field>
+              </form>
+           <form>
+                <mat-form-field class="mat-form-field-infix" >
+                  <mat-label>New password</mat-label>
+                  <input matInput [type]="hide1 ? 'password' : 'text'" [formControl]="newp" required>
+                  <button mat-icon-button matSuffix (click)="hide1 = !hide1" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide1">
+                  <mat-icon>{{hide1 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                  <mat-error *ngIf="newp.invalid">{{getpassError1()}}</mat-error>
+                </mat-form-field>
+              </form>
+           
+                <mat-form-field class="mat-form-field-infix" >
+                  <mat-label>Confirm New password</mat-label>
+                  <input matInput [type]="hide2 ? 'password' : 'text'" [formControl]="newpc" required>
+                  <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide2">
+                  <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                  <mat-error *ngIf="newpc.invalid">{{getpassError2()}}</mat-error>
+
+                   
+                </mat-form-field>
+               
+      
+          <button mat-button [mat-dialog-close]="false">Cancel</button>
+          <button mat-stroked-button [mat-dialog-close]="false" >Save Changes</button>
+      
+    

@@ -1,0 +1,276 @@
+.full2{
+    margin: 2% 2%;
+}
+.example-ripple-container {
+  cursor: pointer;
+  text-align: center;
+  margin: 2% -14%;
+  width: 270px;
+  height: 210px;
+  display: inline-table;
+  line-height: 200px;
+  background: lemonchiffon;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  font-size: 23px;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.example-ripple-container2 {
+  cursor: pointer;
+  text-align: center;
+  display: inline-table;
+  margin: 2% 21%;
+  width: 270px;
+  height: 210px;
+  font-size: 23px;
+  line-height: 200px;
+  background: lemonchiffon;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.example-ripple-container3 {
+  cursor: pointer;
+  text-align: center;
+  display: inline-table;
+  margin: 2% -14%;
+  width: 270px;
+  height: 210px;
+  font-size: 23px;
+  line-height: 200px;
+  background: lemonchiffon;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.example-ripple-container4 {
+  cursor: pointer;
+  text-align: center;
+  display: flexbox;
+  margin: 4% 4%;
+  width: 270px;
+  height: 210px;
+  font-size: 23px;
+  line-height: 200px;
+  background: lemonchiffon;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.example-ripple-container5 {
+  cursor: pointer;
+  text-align: center;
+  display: flexbox ;
+  margin: -24% 37%;
+  width: 270px;
+  height: 210px;
+  font-size: 23px;
+  line-height: 200px;
+  background: lemonchiffon;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.example-ripple-container6 {
+  cursor: pointer;
+  text-align: center;
+  display: flexbox ;
+  margin: 4% 70%;
+  width: 270px;
+  height: 210px;
+  font-size: 23px;
+  line-height: 200px;
+  background: lemonchiffon;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mat-chip {
+    max-width: 110px;
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    padding: 0 2%;
+    cursor: pointer;
+  }
+  mat-form-field{
+      width: 58%;
+  }
+
+
+  .maincontainer1{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    margin: 0 24%;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+ 
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard:hover{
+    transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #ffc728;
+    color: #000;
+  }
+  
+
+  .mat-stroked-button {
+    border: 1px solid currentColor;
+    padding: 0px 15px;
+    margin: 0 19px;
+    line-height: 34px;
+}
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background:linen;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront h1, .theback h1{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .thefront p, .theback p{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* CARD --- 2 */
+  .maincontainer2{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    margin: 0 -26%;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  .thefront2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #ffc728;
+    color: #000;
+  }
